@@ -2,15 +2,15 @@
 ROOT=`pwd`"/vendor/assets"
 TMP='tmp/sass-twitter-bootstrap'
 # Pull down sass-twitter-bootstrap sources
-git clone https://github.com/jlong/sass-twitter-bootstrap.git tmp/sass-twitter-bootstrap --branch '3.0.0-wip'
+git clone https://github.com/anjlab/bootstrap-rails tmp/sass-twitter-bootstrap
 
 # Copy lib/ to stylesheets/
 mkdir -p $ROOT/stylesheets/bootstrap
-cp -r $TMP/lib/* $ROOT/stylesheets/bootstrap
+cp -r $TMP/app/assets/stylesheets/twitter/* $ROOT/stylesheets
 # Copy js/ to javascripts/bootstrap
-cp -r $TMP/js/* $ROOT/javascripts/bootstrap
+cp -r $TMP/app/assets/javascripts/twitter/* $ROOT/javascripts
 # Copy fonts/ to fonts/
-cp -r $TMP/fonts/* $ROOT/fonts
+#cp -r $TMP/fonts/* $ROOT/fonts
 # Remove tests
 rm -r $ROOT/javascripts/bootstrap/tests
 
@@ -23,4 +23,4 @@ rm -r $ROOT/javascripts/bootstrap/tests
 #sed -i .bak 's_@import \"_@import \"bootstrap/_g' $ROOT/stylesheets/bootstrap/bootstrap.scss
 rm $ROOT/stylesheets/bootstrap/*.bak
 
-rm -rf $TMP
+#rm -rf $TMP

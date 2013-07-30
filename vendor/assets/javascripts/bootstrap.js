@@ -1,13 +1,12 @@
-//= require bootstrap/affix
-//= require bootstrap/alert
-//= require bootstrap/button
-//= require bootstrap/carousel
-//= require bootstrap/collapse
-//= require bootstrap/dropdown
-//= require bootstrap/modal
-//= require bootstrap/scrollspy
-//= require bootstrap/tab
-//= require bootstrap/tooltip
-// Popover depends on tooltip and must be included after it:
-//= require bootstrap/popover
-//= require bootstrap/transition
+//= require bootstrap/transition.js
+//= require bootstrap/alert.js
+//= require bootstrap/button.js
+//= require bootstrap/carousel.js
+//= require bootstrap/collapse.js
+//= require bootstrap/dropdown.js
+//= require bootstrap/modal.js
+//= require bootstrap/tooltip.js
+//= require bootstrap/popover.js
+//= require bootstrap/scrollspy.js
+//= require bootstrap/tab.js
+//= require bootstrap/affix.js
